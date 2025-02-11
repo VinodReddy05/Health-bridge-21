@@ -7,10 +7,7 @@ export default defineConfig({
   plugins: [
     react()
   ],
-  base: '/',
-  build: {
-    outDir: 'build'  // Optional if you want to output to a 'build' folder
-  }
+  
 })
 
 
