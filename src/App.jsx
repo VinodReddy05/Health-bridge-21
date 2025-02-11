@@ -28,7 +28,7 @@ const Signup = lazy(() => import("./Pages/Authentication/Signup/Signup"));
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter  basename="/Health-bridge-21">
       <RoutesWrapper />
     </BrowserRouter>
   );
