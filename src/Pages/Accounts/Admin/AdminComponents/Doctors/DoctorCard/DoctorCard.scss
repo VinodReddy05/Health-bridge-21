@@ -1,0 +1,124 @@
+.doctorcard {
+  width: 100%;  
+  max-width: 350px; 
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 12px;
+  border: 2px solid rgb(103, 165, 10);
+margin:10px 40px 10px 0;
+
+  padding: 20px;
+  justify-content: center;
+  text-align: center; 
+  transition: transform 0.19s ease-in-out;
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+
+  .doctor-image {
+    width: 100%; 
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+
+  .doctor-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%; 
+  }
+
+  .doctor-name {
+    font-size: 1.5rem;
+    color: #333;
+  }
+
+  .doctor-info {
+    font-size:16px;
+    color: #666;
+    width: fit-content;
+    min-width: 100px;
+  
+   
+  }
+
+  .doctor-designation {
+    font-size: 16px;
+    color: #444;
+    font-weight: bold;
+  }
+
+  .doctor-rating {
+    font-size: 1rem;
+    color: #4caf50;
+  }
+
+  .doctor-actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;  
+  }
+}
+
+@media (max-width: 768px) {
+  .doctorcard {
+    max-width: 100%;  
+    padding: 15px;
+  }
+
+  .doctor-name {
+    font-size: 1.3rem;    }
+
+  .doctor-info,
+  .doctor-designation {
+    font-size: 0.95rem;
+  }
+
+  .doctor-rating {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 475px) {
+  .doctorcard {
+    max-width: 100%;  
+    padding: 10px;  
+  }
+
+  .doctor-details {
+    gap: 5px;  
+  }
+
+  .doctor-name {
+    font-size: 1.1rem; 
+  }
+
+  .doctor-info,
+  .doctor-designation,
+  .doctor-rating {
+    font-size: 0.85rem;  
+  }
+}
+@media (max-width: 420px) {
+  .doctorcard {
+    max-width: 100%; 
+    padding: 10px; 
+    margin:0;
+  }
+
+  .doctor-details {
+    gap: 5px;  
+  }
+
+  .doctor-name {
+    font-size: 1.1rem; 
+  }
+
+  .doctor-info,
+  .doctor-designation,
+  .doctor-rating {
+    font-size: 0.85rem;  
+  }
+}

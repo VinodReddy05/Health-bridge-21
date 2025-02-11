@@ -1,0 +1,133 @@
+.my-patients {
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 100px 0 0 250px;
+  background-color: #F9F9F9;
+
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+  }
+
+  .loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .patients-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .error-message {
+    text-align: center;
+    color: red;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+
+  .patients-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .patient-cards {
+    width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+  
+    margin:10px;
+    &:hover{
+      transition: all 0.2s ease-in-out;
+      transform: scale(1.03);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+    }
+    .patient-head{
+      display: flex;
+      justify-content: space-between;
+      h2{
+        color: rgb(14, 80, 14);
+      }
+    }
+    .blood-group{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h2 {
+        color: green;
+        margin: 0;
+        font-size: 1.6rem;
+      }
+    }
+
+    p {
+      margin: 0.5rem 0;
+
+      strong {
+        color: #2c3e50;
+      }
+
+      &:nth-child(2) {
+        color: red;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .no-patients {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    color: #555;
+  }
+}
+
+@media (max-width: 767px) {
+  .my-patients {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 100px 0 0 0;
+    h1{
+      position: sticky;
+      top: 90px;
+      background-color: #fff;
+      text-align: center;
+      padding: 15px 10px;
+    }
+    .patients-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .patient-card {
+      min-width: 400px;
+    }
+  }
+}

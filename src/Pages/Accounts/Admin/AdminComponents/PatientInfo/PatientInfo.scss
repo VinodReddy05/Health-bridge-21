@@ -1,0 +1,54 @@
+.table {
+  scrollbar-width: none !important;
+  
+
+  .tablePatient {
+    font-size: 18px;
+  }
+
+  .tablecell {
+    font-weight: bold !important;
+  }
+
+  .tablename {
+    font-size: 16px !important;
+  }
+
+  .viewmore {
+    color: #4caf50 !important;
+    font-size: 18px !important;
+    cursor: pointer;
+  }
+
+  .tablecell {
+    &.pending {
+      color: #ffc107 !important;
+    }
+
+    &.recovered {
+      color: #4caf50 !important;
+    }
+
+    &.rejected {
+      color: #f44336 !important;
+    }
+  }
+
+  .MuiTableBody-root {
+    display: block;
+    max-height: 300px; 
+    overflow-y: auto;
+  }
+
+  .MuiTableRow-root {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  .MuiTableHead-root {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+}

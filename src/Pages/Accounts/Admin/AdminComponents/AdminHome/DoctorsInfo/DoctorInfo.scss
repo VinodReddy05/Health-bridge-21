@@ -1,0 +1,82 @@
+.doctor-info {
+  text-align: center;
+
+  #doctor-swiper {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px 0;
+  }
+
+  .doctor-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .doctor-card {
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      padding: 20px;
+      width: 300px;
+
+      .doctor-image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+      }
+
+      h3 {
+        margin: 10px 0;
+        font-size: 1.2em;
+      }
+
+      p {
+        font-size: 0.9em;
+        color: #666;
+      }
+    }
+  }
+
+  @media (max-width: 750px) {
+    min-width: 500px;
+    text-align: unset;
+  }
+
+}
+@media (max-width: 500px) {
+  .doctor-info {
+    min-width: 400px;
+    text-align: unset;
+    #doctor-swiper {
+      width: 80%;
+      max-width:900px;
+    }
+  }
+
+  .doctor-card {
+    width: 90%;
+    padding: 10px;
+  }
+  .swiper-button-prev, .swiper-button-next{
+    display: none !important;
+  }
+}
+@media (max-width: 400px) {
+  .doctor-info {
+    min-width: 350px;
+    text-align: unset;
+    #doctor-swiper {
+      width: 80%;
+      max-width:900px;
+    }
+  }
+
+  .doctor-card {
+    width: 90%;
+    padding: 10px;
+  }
+  .swiper-button-prev, .swiper-button-next{
+    display: none !important;
+  }
+}

@@ -1,0 +1,273 @@
+.single-doctor-data {
+  width: 80%;
+  padding: 20px;
+  margin: 100px 0 0 250px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  .profile-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .profile-details {
+      h2 {
+        margin: 0;
+        font-size: 24px;
+        color: #333;
+      }
+      p {
+        margin: 5px 0;
+        color: #666;
+      }
+    }
+
+    button {
+      margin-left: auto;
+      padding: 10px 20px;
+      background-color: unset;
+      color: #333;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      &:hover {
+        color: red;
+      }
+    }
+  }
+
+  .edit-section {
+    margin-top: 20px;
+    .editable-field {
+      margin-bottom: 15px;
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #333;
+      }
+
+      input[type="text"],
+      input[type="file"] {
+        padding: 10px;
+        border: 1px solid #bd2e2e;
+        border-radius: 5px;
+        &:focus {
+          outline: none;
+          border-color: #007bff;
+        }
+      }
+    }
+
+    .actions {
+      button {
+        padding: 10px 20px;
+        background-color: #28a745;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover {
+          background-color: #218838;
+        }
+      }
+    }
+  }
+
+  .info {
+    margin-top: 20px;
+
+    .info-buttons {
+      display: flex;
+      gap: 10px;
+
+      button {
+        padding: 10px 15px;
+        background-color: #4d9be9;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &.active1 {
+          background-color: #007bff;
+          color: #fff;
+        }
+
+        &:hover {
+          background-color: #007bff;
+        }
+      }
+    }
+
+    .info-content {
+      width: 100%;
+      margin-top: 20px;
+      ul {
+        margin: 30px;
+
+        list-style-type: square;
+      }
+      .project-detail {
+        padding: 20px;
+        background-color: #f8f9fa;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}
+
+.popform {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popform-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+}
+
+.popform-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 10px;
+}
+
+.popform-header h3 {
+  margin: 0;
+}
+
+.popform-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  .editable-field {
+    display: flex;
+    gap: 20px;
+    input {
+      border: none;
+      border-bottom: 2px solid;
+    }
+  }
+}
+
+.popform-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 767px) {
+  .single-doctor-data {
+    width: 100%;
+    height: 100vh;
+
+    margin: 90px 0 0 0;
+    .info {
+      .info-content {
+        width: 100%;
+        margin-top: 20px;
+      }
+    }
+
+    .profile-header {
+      flex-direction: column;
+      gap: 20px;
+      img {
+        width: 380px;
+        height: 350px;
+        border-radius: 80px;
+      }
+    }
+
+    .profile-details {
+      display: flex;
+      justify-content: start;
+      align-items: start;
+      flex-direction: column;
+
+      h2 {
+        margin: 0;
+        font-size: 24px;
+        color: #333;
+      }
+      p {
+        margin: 5px 0;
+        color: #666;
+      }
+    }
+  }
+}
+@media (max-width: 330px) {
+  .single-doctor-data {
+    width: 100%;
+    height: 100vh;
+
+    margin: 90px 0 0 0;
+    .info {
+      .info-content {
+        width: 100%;
+        margin-top: 20px;
+      }
+    }
+
+    .profile-header {
+      flex-direction: column;
+      gap: 20px;
+      img {
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+      }
+    }
+
+    .profile-details {
+      display: flex;
+      justify-content: start;
+      align-items: start;
+      flex-direction: column;
+
+      h2 {
+        margin: 0;
+        font-size: 24px;
+        color: #333;
+      }
+      p {
+        margin: 5px 0;
+        color: #666;
+      }
+    }
+
+    .info {
+      .info-buttons {
+        button {
+          font-size: 10px;
+         
+        }
+      }}
+  }
+}

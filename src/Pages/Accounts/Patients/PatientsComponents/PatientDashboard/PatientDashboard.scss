@@ -1,0 +1,130 @@
+.main-container {
+  display: flex;
+  min-height: 100vh;
+  flex: 6;
+  padding: 50px 0 0 250px;
+ 
+}
+
+.main-sidebar {
+  background-color: aqua;
+
+}
+
+.patient-dashboard-content {
+  transition: flex 0.3s ease;
+  overflow-y: auto; 
+
+  .main-container.collapsed & {
+    flex: 8; 
+  }
+
+  h1 {
+    margin-bottom: 20px;
+  }
+}
+
+.patient-dashboard-containers {
+  display: flex;
+  flex-direction: column;
+}
+
+.patient-sidebar {
+  padding: 20px;
+  position: sticky;
+  top: 0; 
+}
+
+.doctor-details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+
+  h3 {
+    width: fit-content;
+    padding: 10px 15px;
+    position: relative;
+    font-size: 30px;
+    margin-top: 20px;
+    color: #404040;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 15px;
+      width: 100%;
+      height: 5px;  
+      background-image: linear-gradient(to right, pink 10%, transparent 100%);
+    }
+  }
+
+  .doctors-card2 {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;  
+    button {
+      background-color: #4daaf5;
+    }
+  }
+  
+  .doctor-card {
+    width: 30%;  
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 20px;
+    transition: all 0.5s ease-in-out;  
+    flex-wrap: wrap;
+  
+    &:hover {
+      transform: scale(1.05);
+    }
+  
+    img {
+      width: 100%;
+      height: auto;
+    }
+  
+    h4 strong {
+      color: #45a049;
+      padding: 10px 15px;
+      border-radius: 10px;
+    }
+  
+    .disg {
+      color: red;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .doctor-card {
+      width: 45%;  
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .doctor-card {
+      width: 100%; 
+    }
+    .main-container {
+      padding: 0 0 0 0;
+  
+     
+    }
+  }
+  
+  
+}
+
+@media (max-width:767px) {
+  .main-container {
+    padding: 50px 0 0 0;
+   
+  }
+}
+
+

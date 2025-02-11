@@ -1,0 +1,45 @@
+.DoctorsData {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  
+  margin: 15vh auto 0 250px;
+  button{
+    background-color: #50ACF5;
+  }
+    
+.doctors-grid{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+  }
+
+  Button {
+    align-self: flex-start;
+    background-color: #4CAF50;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+
+    &:hover {
+      background-color: #45a049;
+    color: white;
+     
+    }
+  }
+
+
+
+@media(max-width:767px){
+  .DoctorsData {
+    margin: 10vh auto 0 0;
+  }
+}

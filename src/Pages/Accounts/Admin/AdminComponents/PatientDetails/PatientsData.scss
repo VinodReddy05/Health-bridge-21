@@ -1,0 +1,191 @@
+.patientsData {
+    display: flex;
+    height: auto;
+    margin-left: 250px;
+    padding-top: 50px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    .patientContainer {
+        flex: 1;
+        padding-top: 30px;
+        .datatable {
+            max-width: 100%;
+            padding-top: 20px;
+            border-radius: 8px;
+            margin: 0 auto;
+    scrollbar-width: none;
+    .created_attbtn,.addpatientbtn,.doctor_namebtn{
+        width: fit-content;
+        position: sticky;
+        left: 10px;
+        padding: 10px 15px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius:10px ;
+        font-weight: bold;
+        background-color: #4DAAF5;
+        cursor: pointer;
+        margin-right: 20px;
+        &:hover{
+            background-color: #4496cd;
+            color: #fff;
+        }
+        
+    }
+    
+   
+        .buttonstatus{
+            display: flex;
+            gap: 20px;
+            border: 1px solid red;
+        }
+        .inputfields{
+          
+            display: flex;
+            justify-content: end;
+            gap: 20px;
+           
+            .inputfield{
+                position:sticky;
+                left: 10px;
+                display: flex;
+                justify-content: end;
+                cursor: pointer;
+               
+            }
+            .inputsearch1{
+                position:sticky;
+                left: 90px;
+
+            }
+        }
+       
+        
+    .inputsearch{
+        display: flex;
+        border: none;
+        outline: none;
+        color: black;
+        border-bottom:2px solid red;
+        padding: 10px 15px; 
+        &:hover{
+            border-bottom: 2px solid green;
+        }
+    
+}
+            .patient-table {
+                width: 100%;
+                margin-top: 20px;
+                border-collapse: collapse;
+                
+
+                th, td {
+                    padding: 16px;
+                    text-align: left;
+                    border: 1px solid #ddd;
+                    font-size: 1rem;
+                }
+                
+                th {
+                    background-color: #36C95F;
+                    color: #fff;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+                
+                .edit{
+                    transform: scale(1.05);
+                }
+              
+                tr:hover {
+                    background-color: #90b8d2;
+                }
+                .edit{
+                    cursor: pointer;
+                }
+            }
+
+            .pagination {
+                position: sticky;
+                left: 100px;
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                margin-top: 20px;
+
+                button {
+                    background-color:#4DAAF5;
+                    color: #fff;
+                    border: none;
+                    padding: 10px 15px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-weight: bold;
+                    font-size: 1rem;
+                    transition: background-color 0.3s ease;
+                    
+                    &.active {
+                        background-color: #4DAAF5
+                    }
+
+                    &:hover:not(.active) {
+                        background-color: #4496cd;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.status-emergency {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .status-normal {
+    color: green;
+    font-weight: bold;
+  }
+
+
+  @media (max-width: 767px) {
+    .patientsData {
+      margin-left: 0;
+      padding-top: 50px;
+  
+      .patientContainer {
+        .datatable {
+          
+            .inputfields {
+              justify-content:start;
+            }
+          
+        .sort-options{
+            display: flex;
+            flex-direction: column;
+        }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .patientsData {
+      .patientContainer {
+        .datatable {
+            .pagination{
+                position: relative;
+                left: 110px;
+                justify-content: unset;
+            }
+        }
+      }
+    }
+  }
+  
+
+
+
+
+  

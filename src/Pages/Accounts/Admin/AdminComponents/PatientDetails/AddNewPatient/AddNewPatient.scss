@@ -1,0 +1,113 @@
+.patientDetail{
+    width: 100%;
+    display: flex;
+    background: url('../../../../../Authentication/Login/loginAssets/backgroundImg.svg') no-repeat center center fixed;
+    background-size: cover;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 0 250px;
+
+h2 {
+    font-size: 29px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.9);
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin: 20px 0 20px 0;
+}
+
+button {
+    background-color: #36C95F;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+   
+
+    &:hover {
+        background-color: #0056b3;
+    }
+}
+
+form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+
+    label {
+        font-size: 0.95rem;
+        color: #444;
+        font-weight: 900;
+    }
+    .patientId{
+        cursor: pointer;
+    }
+    
+    input {
+        padding: 12px;
+        font-size: 1rem;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: border-color 0.3s ease;
+
+        &:focus {
+            outline: none;
+            border:2px solid #72a3d7;
+        }
+    }
+    select{
+        padding: 12px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            transition: border-color 0.3s ease;
+     }
+
+    .error {
+        color: #d9534f;
+        font-size: 0.9rem;
+    }
+ 
+
+    button[type="submit"] {
+        background-color: #28a745;
+        color: #fff;
+        padding: 12px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: #218838;
+        }
+    }
+}
+
+}
+
+@media(max-width:776px){
+    .patientDetail{
+        background: url('../../../../../Authentication/Login/loginAssets/backgroundImg.svg') no-repeat right center fixed;
+        background-size:cover;
+        padding:0;
+        form {
+            width: 90%;
+        }
+    }
+}
