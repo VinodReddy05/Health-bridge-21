@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { supabase } from '../../../../../../utilies/SupaBase';
-import emailjs from 'emailjs-com';
 import NavBar from '../../../../../../Components/NavBar/NavBar';
+import emailjs from '@emailjs/browser';
+
 import SideBar from '../../SiderBar/SideBar';
 import './AddDoctor.scss'
 import { toast } from 'react-toastify';
