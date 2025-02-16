@@ -4,9 +4,9 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/Health-bridge-21/',  // Update with your GitHub repo name
+  base: '/Health-bridge-21/',  
   build: {
-    outDir: 'dist',  // Ensure this is set
+    outDir: 'dist', 
   },
   plugins: [
     react()
