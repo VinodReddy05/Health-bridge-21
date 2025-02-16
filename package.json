@@ -25,7 +25,6 @@
     "emailjs": "^4.0.3",
     "emailjs-com": "^3.2.0",
     "generate-password": "^1.7.1",
-    "gh-pages": "^6.3.0",
     "jspdf": "^2.5.2",
     "lazy": "^1.0.11",
     "leaflet": "^1.9.4",

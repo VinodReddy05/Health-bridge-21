@@ -6,7 +6,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: '/Health-bridge-21/',  // Update with your GitHub repo name
   build: {
-    outDir: 'build',  // Ensure this is set
+    outDir: 'dist',  // Ensure this is set
   },
   plugins: [
     react()
